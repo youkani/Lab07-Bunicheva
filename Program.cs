@@ -81,3 +81,56 @@
 // if (flag == false) {
 //         Console.Write("Не найдено");
 // }
+
+//Итоговая задача. «Журнал оценок»
+// int[] grades = {4,5,3,2,5,4,3,4};
+// double sum = 0;
+// int mini = grades[0];
+// int maxi = grades[0];
+// int countMin = 0;
+// int countMax = 0;
+// foreach (int i in grades) {
+//     Console.Write(i + " ");
+//     sum += i;
+//     if (mini > i) {
+//         mini = i;
+//     }
+//     else if (maxi < i) {
+//         maxi = i;
+//     }
+//     if (i == 2) {
+//         countMin++;
+//     }
+//     else if (i == 5) {
+//         countMax++;
+//     }
+// }
+// double sred = sum / grades.Length;
+// Console.Write($"Средняя оценка: {sred}\n");
+// Console.Write($"Наименьшая оценка: {mini}\n");
+// Console.Write($"Наибольшая оценка: {maxi}\n");
+// Console.Write($"Количество двоек: {countMin}\n");
+// Console.Write($"Количество пятёрок: {countMax}\n");
+// if (sred >= 4.5) {
+//     Console.Write("Отличник");
+// } else if (sred >= 3.5) {
+//     Console.Write("Хорошист");
+// } else {
+//     Console.Write("Есть над чем поработать");
+// }
+
+//Дополнительное задание ★★★
+int[] arr = { 1, 2, 3, 4, 5, 6 };
+
+for (int i = 0; i < 3; i++)
+{
+    int vrem = arr[i];
+
+    int j = 5 - i;
+
+    arr[i] = arr[j];
+    arr[j] = vrem;
+}
+foreach (int i in arr) {
+          Console.Write(i + " ");
+      }
